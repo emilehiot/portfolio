@@ -1,97 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emile - Portfolio</title>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/2b1ffec109.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main-container">
-        <div class="aside">
-            <div class="logo">
-                <a href="#">
-                    <span>E</span>
-                    mile
-                </a>
-            </div>
-
-            <div class="nav-toggler">
-            <!-- TODO: pour le js  -->
-            </div>
-
-            <ul class="nav">
-                <li>
-                    <a href="#home" class="active">
-                        <i class="fa-solid fa-house"></i>
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#about">
-                        <i class="fa-solid fa-user"></i>
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a href="#education">
-                        <i class="fa-solid fa-school"></i>
-                        Education
-                    </a>
-                </li>
-                <li>
-                    <a href="#experience">
-                        <i class="fa-solid fa-briefcase"></i>
-                        Experience
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">
-                        <i class="fa-solid fa-comments"></i>
-                        Contact
-                    </a>
-                </li>
-            </ul>
+      <!-- barre navigation laterale -->
+      <div class="aside">
+        <div class="logo">
+          <a href="#">
+            <span>E</span>
+            mile
+          </a>
         </div>
 
-        <div class="content">
-           <section class="home section active" id="home">
-            <div class="container">
-                <div class="row">
-                    <div class="home-info padd-15">
-                        <h3 class="hello">
-                            Hello, my name is 
-                            <span class="name">Emile</span>
-                        </h3>
+        <!-- menu burgur -->
+        <div class="nav-toggler"></div>
 
-                        <h3 class="my-profession">
-                            I'm a 
-                            <span class="typing"></span>
-                            <span class="typed-cursor" aria-hidden="true">|</span>
-                        </h3>
+        <!-- rubrique -->
+        <ul class="nav">
+          <li>
+            <a href="#home" class="nav-link active">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link">
+              <i class="fa-solid fa-user"></i>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#education" class="nav-link">
+              <i class="fa-solid fa-school"></i>
+              Education
+            </a>
+          </li>
+          <li>
+            <a href="#experience" class="nav-link">
+              <i class="fa-solid fa-briefcase"></i>
+              Experience
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">
+              <i class="fa-solid fa-comments"></i>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur et vero repellat sapiente modi, quasi ratione velit laudantium cum libero odio ullam accusamus, ut consectetur reprehenderit sit, voluptatem possimus illum? 
-                        </p>
+      <!-- page principale -->
+      <div class="content">
+        <!-- rubrique 'HOME' -->
+        <section class="home section active" id="home">
+          <div class="container">
+            <div class="row">
+              <div class="home-info padd-15">
+                <h3 class="hello">
+                  Hello, my name is
+                  <span class="name">Emile</span>
+                </h3>
 
-                        <a href="#" class="btn">Download CV</a>
-                    </div>
+                <h3 class="my-profession">
+                  I'm a
+                  <span class="typing"></span>
+                  <!-- "Apprenti développeur" | "Étudiant autodidacte" | "Passionné de technologie" | "Créatif" | "Résolveur de problèmes" -->
+                  <span class="typed-cursor" aria-hidden="true">|</span>
+                </h3>
 
-                    <div class="home-img padd-15">
-                        <img src="#" alt="Photo representant Emile HIOT sous forme humaine">
-                    </div>
+                <p>
+                  En tant qu'<strong>étudiant autodidacte</strong>, ma passion
+                  se trouve dans la création et la résolution de problèmes.
+                  Chaque projet sur lequel je travaille reflète mon
+                  <strong>engagement</strong> à relever des défis, ainsi que ma
+                  volonté de continuer d'apprendre et de grandir dans ce domaine
+                  fascinant.
+                </p>
+
+                <a href="#" class="btn">Download CV</a>
+              </div>
+
+              <div class="home-img padd-15">
+                <img
+                  src="#"
+                  alt="Photo me representant de face, sous forme humaine"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- rubrique 'ABOUT' -->
+        <section class="about section" id="about">
+          <div class="container">
+            <!-- Section A propos -->
+            <div class="about-section">
+              <header>
+                <h2>A propos</h2>
+              </header>
+              <article class="about-content">
+                <p>
+                  Mon voyage dans le monde du développement web a commencé par
+                  une curiosité simple et s'est transformé en une passion
+                  profonde. En tant qu'autodidacte, chaque défi rencontré est
+                  une opportunité d'apprendre et de grandir. Bien que je sois au
+                  début de mon parcours, ma détermination à comprendre et à
+                  maîtriser chaque aspect du développement est inébranlable.
+                </p>
+              </article>
+            </div>
+
+            <!-- info perso -->
+            <div class="personal-info-section">
+              <header>
+                <h2>Information personnelle</h2>
+              </header>
+              <aside class="personal-info">
+                <div class="personal-info-col">
+                  <p>Date de naissance : <span>05 Avril 1996</span></p>
+                  <p>Age : <span>27 ans</span></p>
+                  <p>Localisation : <span>Carcassonne (11 - Aude)</span></p>
                 </div>
+                <div class="personal-info-col">
+                  <p>Téléphone : <span>07.68.99.47.61</span></p>
+                  <p>Email : <span>emile.hiot@proton.me</span></p>
+                  <p>Site web : <span>Prochainement</span></p>
+                </div>
+              </aside>
             </div>
-           </section>
-           <section class="about section" id="about"></section>
-           <section class="education section" id="education"></section>
-           <section class="experience section" id="experience"></section>
-           <section class="contact section" id="contact"></section>
-        </div>
+
+            <!-- skills -->
+            <div class="skills-section">
+              <header>
+                <h2>Skills</h2>
+              </header>
+
+              <div class="skills">
+                <!-- Front-end -->
+                <div class="skill-category">
+                  <div class="skill-header">
+                    <h3>Front</h3>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fa-brands fa-square-js"></i>
+                    <p>JavaScript</p>
+                  </div>
+                </div>
+
+                <!-- Back-end -->
+                <div class="skill-category">
+                  <div class="skill-header">
+                    <h3>Back</h3>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fa-brands fa-php"></i>
+                    <p>PHP</p>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fa-brands fa-symfony"></i>
+                    <p>Symfony</p>
+                  </div>
+                </div>
+
+                <!-- Outils -->
+                <div class="skill-category">
+                  <div class="skill-header">
+                    <h3>Outils</h3>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fa-brands fa-vim"></i>
+                    <p>Vim</p>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fa-brands fa-figma"></i>
+                    <p>Figma</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- bouton me contacter qui redirige vers Contact -->
+            <div class="boutton-section">
+              <div class="buttons padd-15">
+                <a href="#contact" data-section-index="1" class="btn hire-me"
+                  >Hire me</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- rubrique 'EDUCATION' -->
+        <section class="education section" id="education">
+          <div class="container">
+            <header>
+              <h2>Education</h2>
+            </header>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-date">2024</span>
+                <div class="timeline-item-content">
+                  <h4>
+                    3W ACADEMY - Intégrateur Développeur Web en Alternance
+                  </h4>
+                  <p>a remplir</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-date">2023</span>
+                <div class="timeline-item-content">
+                  <h4>
+                    <a
+                      href="https://3wacademy.fr/3w-academy-pro/formation-en-alternance/formation-integrateur-developpeur-web"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >3W ACADEMY - Bootcamp Développeur Web (3 mois)</a
+                    >
+                  </h4>
+                  <p>
+                    J'ai pu explorer en profondeur les facettes du front-end
+                    (HTML, CSS, JavaScript) et du back-end (PHP). Les défis
+                    étaient au rendez-vous, ce qui a renforcé ma détermination à
+                    avancer dans cette voie. Ce bootcamp m'a poussé à continuer
+                    à apprendre de manière autodidacte et à approfondir mes
+                    compétences.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-date">2023</span>
+                <div class="timeline-item-content">
+                  <h4>
+                    <a
+                      href="https://www.theodinproject.com/about"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >The Odin Project - Formation en Ligne Open Source</a
+                    >
+                  </h4>
+                  <p>
+                    The Odin Project m'a permis d'explorer les fondamentaux du
+                    développement front-end, avec le soutien de développeurs
+                    expérimentés. La méthodologie pratique et l'interaction avec
+                    une communauté active via Discord ont rendu cet
+                    apprentissage stimulant, encouragant une poursuite autonome
+                    de ma formation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- rubrique Experience -->
+        <section class="experience section" id="experience">
+          <div class="container">
+            <header>
+              <h2>Expérience</h2>
+            </header>
+
+            <div class="card-container">
+              <div class="card">
+                <div class="image-container">
+                  <!-- Vous pouvez utiliser une image que vous avez prise ou générée précédemment -->
+                  <img
+                    src="assets/img/review_portfolio.png"
+                    alt="Aperçu du projet Portfolio"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3>Portfolio Personnel</h3>
+                  <p>
+                    Mon projet portfolio a été conçu comme un challenge
+                    personnel au début de mon parcours en développement web.
+                    C'était l'occasion de montrer ce que je pouvais faire avec
+                    les bases : HTML, CSS, et JavaScript. J'ai voulu créer
+                    quelque chose de simple mais efficace.
+                  </p>
+                  <div class="links">
+                    <a href="url_du_site" target="_blank">Voir le site</a>
+                    <a href="url_du_repo_github" target="_blank">
+                      <img src="path_to_github_logo.png" alt="Logo GitHub" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Répétez la structure de la carte pour chaque projet que vous souhaitez présenter -->
+
+              <div class="card">
+                <div class="image-container">
+                  <!-- Vous pouvez utiliser une image que vous avez prise ou générée précédemment -->
+                  <img
+                    src="assets/img/review_portfolio.png"
+                    alt="Aperçu du projet Portfolio"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3>Portfolio Personnel</h3>
+                  <p>
+                    Mon projet portfolio a été conçu comme un challenge
+                    personnel au début de mon parcours en développement web.
+                    C'était l'occasion de montrer ce que je pouvais faire avec
+                    les bases : HTML, CSS, et JavaScript. J'ai voulu créer
+                    quelque chose de simple mais efficace.
+                  </p>
+                  <div class="links">
+                    <a href="url_du_site" target="_blank">Voir le site</a>
+                    <a href="url_du_repo_github" target="_blank">
+                      <img src="path_to_github_logo.png" alt="Logo GitHub" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- rubrique contact -->
+        <section class="contact section" id="contact">
+          <section class="contact section" id="contact">
+            <div class="container">
+              <header>
+                <h2>Contact</h2>
+              </header>
+              <form>
+                <label for="name">Nom :</label><br />
+                <input type="text" id="name" name="name" placeholder="Votre nom" /><br />
+                <label for="email">Email :</label><br />
+                <input type="email" id="email" name="email" placeholder="exemple@domaine.com" /><br />
+                <label for="message">Message :</label><br />
+                <textarea id="message" name="message" rows="10" cols="30" placeholder="Votre message ..."></textarea><br />
+                <input type="submit" value="Envoyer" class="btn" />
+              </form>
+            </div>
+          </section>
+        </section>
+      </div>
     </div>
-</body>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
