@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-/* reset */
+/* Reset */
 :root {
   --bg-black-900: #f2f2fc;
   --bg-black-100: #fdf9ff;
@@ -57,6 +57,7 @@ ul {
   opacity: 1;
   animation: slideSection 1s ease;
 }
+
 @keyframes slideSection {
   0% {
     transform: translateX(100%);
@@ -65,6 +66,7 @@ ul {
     transform: translateX(0%);
   }
 }
+
 .hidden {
   display: none !important;
 }
@@ -137,7 +139,7 @@ ul {
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-/* aside */
+/* ASIDE (navbar) */
 .aside {
   width: 270px;
   background: var(--bg-black-100);
@@ -201,7 +203,7 @@ ul {
   top: 20px;
   border-radius: 5px;
   background: var(--bg-black-100);
-  display: none; /* flex */
+  display: none;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
@@ -264,7 +266,7 @@ ul {
   margin-right: 15px;
 }
 
-/* home */
+/* ACCUEIL */
 .home {
   min-height: 100vh;
   display: flex;
@@ -328,13 +330,13 @@ h3.my-profession {
   border-radius: 5px;
 }
 
-/* section About */
+/* A PROPOS */
 .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Pour centrer horizontalement */
-  height: 100vh; /* Pour centrer verticalement */
+  align-items: center;
+  height: 100vh;
 }
 
 .about .about-info {
@@ -377,7 +379,7 @@ header h2 {
   color: var(--text-black-700);
 }
 
-/* Styles pour la section Information personnelle */
+/* Information personnelle */
 .personal-info {
   display: flex;
   justify-content: start;
@@ -400,7 +402,7 @@ header h2 {
   font-weight: bold;
 }
 
-/* Styles pour la section Compétences */
+/* Compétences */
 .skills {
   display: flex;
   justify-content: space-between;
@@ -430,8 +432,6 @@ header h2 {
   border-bottom: 1px solid var(--bg-black-50);
   margin-bottom: 10px;
   width: 20%; 
-  /* margin-left: auto; 
-  margin-right: auto;  */
   text-align: left;
 }
 
@@ -452,19 +452,18 @@ header h2 {
   margin-left: 10px;
 }
 
-/* bouton de about */
+/* bouton 'Contactez-moi' */
 .boutton-section {
   text-align: center;
 }
 
-/* section education  */
-
+/* EDUCATION  */
 .education {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Pour centrer verticalement */
+    height: 100vh;
 }
 
 .education h2 {
@@ -478,7 +477,7 @@ header h2 {
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  margin-left: 50px; /* Ajusté pour donner de l'espace pour la date */
+  margin-left: 50px;
 }
 
 .timeline::before {
@@ -496,7 +495,7 @@ header h2 {
   flex-direction: row;
   align-items: flex-start;
   margin-bottom: 20px;
-  padding-left: 20px; /* Ajusté pour aligner le contenu avec la barre */
+  padding-left: 20px;
   position: relative;
   width: 100%;
 }
@@ -504,8 +503,8 @@ header h2 {
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -20px; /* Ajusté pour positionner le cercle correctement */
-  top: 6px; /* Ajusté pour aligner le cercle avec la date et le titre */
+  left: -20px;
+  top: 6px;
   height: 10px;
   width: 10px;
   background-color: var(--skin-color);
@@ -515,9 +514,9 @@ header h2 {
 .timeline-date {
   font-size: 16px;
   color: var(--text-black-700);
-  margin-right: 10px; /* Ajusté pour donner de l'espace entre la date et le cercle */
+  margin-right: 10px;
   position: absolute;
-  left: -60px; /* Ajusté pour positionner la date à gauche du cercle */
+  left: -60px;
 }
 
 .timeline-item-content {
@@ -535,9 +534,9 @@ header h2 {
 }
 
 .timeline-item h4 a {
-  color: inherit; /* hérite la couleur du texte du parent h4 */
-  text-decoration: none; /* retire le soulignement */
-  font-weight: inherit; /* hérite la graisse du texte du parent h4 */
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
 }
 
 .timeline-item p {
@@ -545,21 +544,21 @@ header h2 {
   color: var(--text-black-700);
 }
 
-/* experience */
+/* EXPERIENCE */
 .experience {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Pour centrer horizontalement */
-  height: 100vh; /* Pour centrer verticalement */
-  text-align: center; /* Pour centrer le texte */
+  align-items: center;
+  height: 100vh;
+  text-align: center;
 }
 
 .container {
   max-width: 1100px;
   width: 100%;
   margin: auto;
-  text-align: left; /* Ajouté pour aligner le texte à gauche */
+  text-align: left;
 }
 
 header h2 {
@@ -572,7 +571,7 @@ header h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: flex-start; /* Pour centrer les cartes horizontalement */
+  justify-content: flex-start;
 }
 
 .card {
@@ -583,7 +582,7 @@ header h2 {
 }
 
 .image-container img {
-  width: 100%; /* Assure que l'image remplit la largeur de la carte */
+  width: 100%;
   display: block;
 }
 
@@ -594,7 +593,7 @@ header h2 {
 .card-content h3 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: var(--text-black-900); /* Assurez-vous que cette variable est définie dans votre CSS */
+  color: var(--text-black-900);
 }
 
 
@@ -603,12 +602,8 @@ header h2 {
   border-bottom: 1px solid var(--bg-black-50);
   padding-bottom: 10px;
   margin-bottom: 10px;
-  overflow-y: auto; /* Permet le défilement vertical si le contenu est trop long */
+  overflow-y: auto;
   max-height: 7em;
-  /* text-overflow: ellipsis;  Retiré */
-  /* display: -webkit-box;  Retiré */
-  /* -webkit-line-clamp: 3;  Retiré */
-  /* -webkit-box-orient: vertical;  Retiré */
 }
 
 .links {
@@ -621,7 +616,7 @@ header h2 {
   color: var(--text-black-900);
 }
 
-/* contact */
+/* CONTACT */
 .contact {
   display: flex;
   flex-direction: column;
