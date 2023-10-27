@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emile - Portfolio</title>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://kit.fontawesome.com/2b1ffec109.js"></script>
+    
   </head>
 
   <body>
     <div class="main-container">
-      <!-- barre navigation laterale -->
+      <!-- NAVBAR -->
       <div class="aside">
         <div class="logo">
           <a href="#">
@@ -22,32 +22,32 @@
         </div>
 
         <!-- menu burgur -->
-        <div class="nav-toggler"></div>
+        <div class="nav-toggler"></div> <!-- TODO -->
 
-        <!-- rubrique -->
+        <!-- Rubrique -->
         <ul class="nav">
           <li>
             <a href="#home" class="nav-link active">
               <i class="fa-solid fa-house"></i>
-              Home
+              Accueil
             </a>
           </li>
           <li>
             <a href="#about" class="nav-link">
               <i class="fa-solid fa-user"></i>
-              About
+              À propos
             </a>
           </li>
           <li>
             <a href="#education" class="nav-link">
               <i class="fa-solid fa-school"></i>
-              Education
+              Éducation
             </a>
           </li>
           <li>
             <a href="#experience" class="nav-link">
               <i class="fa-solid fa-briefcase"></i>
-              Experience
+              Expérience
             </a>
           </li>
           <li>
@@ -59,32 +59,28 @@
         </ul>
       </div>
 
-      <!-- page principale -->
+      <!-- Page Principale -->
       <div class="content">
-        <!-- rubrique 'HOME' -->
+        <!-- ACCUEIL -->
         <section class="home section active" id="home">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
                 <h3 class="hello">
-                  Hello, my name is
+                  Bonjour, je m'appelle
                   <span class="name">Emile</span>
                 </h3>
 
                 <h3 class="my-profession">
-                  I'm a
+                  Je suis
+                  <!-- typing.js -->
                   <span class="typing"></span>
-                  <!-- "Apprenti développeur" | "Étudiant autodidacte" | "Passionné de technologie" | "Créatif" | "Résolveur de problèmes" -->
                   <span class="typed-cursor" aria-hidden="true">|</span>
                 </h3>
 
                 <p>
-                  En tant qu'<strong>étudiant autodidacte</strong>, ma passion
-                  se trouve dans la création et la résolution de problèmes.
-                  Chaque projet sur lequel je travaille reflète mon
-                  <strong>engagement</strong> à relever des défis, ainsi que ma
-                  volonté de continuer d'apprendre et de grandir dans ce domaine
-                  fascinant.
+                  Ayant commencé mon parcours en <strong>développement web</strong> de manière autodidacte, ma passion réside dans la <strong>création</strong> et la <strong>résolution de problèmes</strong> à travers le code. Chaque <strong>projet</strong> sur lequel je travaille reflète mon <strong>engagement</strong> à relever des défis, ainsi que ma volonté de <strong>continuer d'apprendre</strong> et de grandir dans ce domaine fascinant.
+
                 </p>
 
                 <a href="#" class="btn">Download CV</a>
@@ -100,13 +96,13 @@
           </div>
         </section>
 
-        <!-- rubrique 'ABOUT' -->
+        <!-- ABOUT -->
         <section class="about section" id="about">
           <div class="container">
-            <!-- Section A propos -->
+            <!-- A propos -->
             <div class="about-section">
               <header>
-                <h2>A propos</h2>
+                <h2>À propos</h2>
               </header>
               <article class="about-content">
                 <p>
@@ -120,7 +116,7 @@
               </article>
             </div>
 
-            <!-- info perso -->
+            <!-- Info perso -->
             <div class="personal-info-section">
               <header>
                 <h2>Information personnelle</h2>
@@ -139,10 +135,10 @@
               </aside>
             </div>
 
-            <!-- skills -->
+            <!-- Skills -->
             <div class="skills-section">
               <header>
-                <h2>Skills</h2>
+                <h2>Compétences</h2>
               </header>
 
               <div class="skills">
@@ -152,15 +148,15 @@
                     <h3>Front</h3>
                   </div>
                   <div class="skill-item">
-                    <i class="fa-brands fa-html5"></i>
+                    <iconify-icon icon="vscode-icons:file-type-html" width="32" height="32"></iconify-icon>
                     <p>HTML</p>
                   </div>
                   <div class="skill-item">
-                    <i class="fa-brands fa-css3-alt"></i>
+                    <iconify-icon icon="vscode-icons:file-type-css" width="32" height="32"></iconify-icon>
                     <p>CSS</p>
                   </div>
                   <div class="skill-item">
-                    <i class="fa-brands fa-square-js"></i>
+                    <iconify-icon icon="logos:javascript" width="32" height="32"></iconify-icon>
                     <p>JavaScript</p>
                   </div>
                 </div>
@@ -171,11 +167,11 @@
                     <h3>Back</h3>
                   </div>
                   <div class="skill-item">
-                    <i class="fa-brands fa-php"></i>
+                    <iconify-icon icon="vscode-icons:file-type-php" width="32" height="32"></iconify-icon>
                     <p>PHP</p>
                   </div>
                   <div class="skill-item">
-                    <i class="fa-brands fa-symfony"></i>
+                    <iconify-icon icon="devicon:symfony" width="32" height="32"></iconify-icon>
                     <p>Symfony</p>
                   </div>
                 </div>
@@ -186,33 +182,33 @@
                     <h3>Outils</h3>
                   </div>
                   <div class="skill-item">
-                    <i class="fa-brands fa-vim"></i>
+                    <iconify-icon icon="devicon:vim" width="32" height="32"></iconify-icon>
                     <p>Vim</p>
                   </div>
                   <div class="skill-item">
-                    <i class="fa-brands fa-figma"></i>
+                    <iconify-icon icon="skill-icons:figma-light" width="32" height="32"></iconify-icon>
                     <p>Figma</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- bouton me contacter qui redirige vers Contact -->
+            
             <div class="boutton-section">
               <div class="buttons padd-15">
                 <a href="#contact" data-section-index="1" class="btn hire-me"
-                  >Hire me</a
+                  >Contactez-moi</a
                 >
               </div>
             </div>
           </div>
         </section>
 
-        <!-- rubrique 'EDUCATION' -->
+        <!-- EDUCATION -->
         <section class="education section" id="education">
           <div class="container">
             <header>
-              <h2>Education</h2>
+              <h2>Éducation</h2>
             </header>
             <div class="timeline">
               <div class="timeline-item">
@@ -272,7 +268,7 @@
           </div>
         </section>
 
-        <!-- rubrique Experience -->
+        <!-- EXPERIENCE -->
         <section class="experience section" id="experience">
           <div class="container">
             <header>
@@ -280,9 +276,8 @@
             </header>
 
             <div class="card-container">
-              <div class="card">
+              <div class="card shadow-dark">
                 <div class="image-container">
-                  <!-- Vous pouvez utiliser une image que vous avez prise ou générée précédemment -->
                   <img
                     src="assets/img/review_portfolio.png"
                     alt="Aperçu du projet Portfolio"
@@ -299,44 +294,20 @@
                   </p>
                   <div class="links">
                     <a href="url_du_site" target="_blank">Voir le site</a>
-                    <a href="url_du_repo_github" target="_blank">
-                      <img src="path_to_github_logo.png" alt="Logo GitHub" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- Répétez la structure de la carte pour chaque projet que vous souhaitez présenter -->
+                    <a href="https://github.com/emilehiot/portfolio" target="_blank">
+                      <iconify-icon icon="mdi:github" width="32" height="32"></iconify-icon>
 
-              <div class="card">
-                <div class="image-container">
-                  <!-- Vous pouvez utiliser une image que vous avez prise ou générée précédemment -->
-                  <img
-                    src="assets/img/review_portfolio.png"
-                    alt="Aperçu du projet Portfolio"
-                  />
-                </div>
-                <div class="card-content">
-                  <h3>Portfolio Personnel</h3>
-                  <p>
-                    Mon projet portfolio a été conçu comme un challenge
-                    personnel au début de mon parcours en développement web.
-                    C'était l'occasion de montrer ce que je pouvais faire avec
-                    les bases : HTML, CSS, et JavaScript. J'ai voulu créer
-                    quelque chose de simple mais efficace.
-                  </p>
-                  <div class="links">
-                    <a href="url_du_site" target="_blank">Voir le site</a>
-                    <a href="url_du_repo_github" target="_blank">
-                      <img src="path_to_github_logo.png" alt="Logo GitHub" />
+
                     </a>
                   </div>
                 </div>
               </div>
+              <!-- Répétez la structure .card -->
             </div>
           </div>
         </section>
 
-        <!-- rubrique contact -->
+        <!-- CONTACT -->
         <section class="contact section" id="contact">
           <section class="contact section" id="contact">
             <div class="container">
@@ -358,6 +329,9 @@
       </div>
     </div>
 
+    <!-- script js -->
+    <script src="https://kit.fontawesome.com/2b1ffec109.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
