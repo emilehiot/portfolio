@@ -193,6 +193,7 @@ ul {
   top: 0;
   right: 0;
 }
+
 .aside .nav-toggler {
   height: 40px;
   width: 45px;
@@ -203,7 +204,7 @@ ul {
   top: 20px;
   border-radius: 5px;
   background: var(--bg-black-100);
-  display: none;
+  /* display: none; */
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
@@ -244,6 +245,31 @@ ul {
   transform: rotate(-45deg);
   top: 0;
 }
+@media (max-width: 1120px) {
+  .aside {
+    transform: translateX(-90%);
+    transition: transform 0.3s ease;
+  }
+  .nav-toggler {
+    display: flex;
+  }
+
+  .section {
+    left: 25px;
+  }
+
+  /* Montre la barre latérale lorsqu'elle a la classe 'visible' add via le js */
+  .aside.visible {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 1121px) {
+  .nav-toggler {
+    display: none;
+  }
+}
+
 .aside .nav {
   margin-top: 50px;
 }
