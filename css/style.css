@@ -352,8 +352,8 @@ h3.my-profession {
   width: 80px;
   border-bottom: 10px solid var(--skin-color);
   border-right: 10px solid var(--skin-color);
-  right: 20px;
-  bottom: -40px;
+  right: -30px;
+  bottom: 50px;
 }
 .home-img::before {
   content: "";
@@ -367,8 +367,10 @@ h3.my-profession {
 }
 .home .home-img img {
   height: 400px;
+  width: 256px;
   margin: auto;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 @media (max-width: 875px) {
@@ -679,11 +681,17 @@ header h2 {
 .links {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .links a {
+  padding: 5px;
   text-decoration: none;
   color: var(--text-black-900);
+}
+
+.github {
+  padding-top: 5px;
 }
 
 /* CONTACT */
@@ -753,5 +761,5 @@ input[type="submit"].btn:hover {
 
   .contact form {
     text-align: center;
-}
+  }
 }
