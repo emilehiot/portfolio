@@ -32,6 +32,19 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+i {
+  transition: all 0.4s ease;
+}
+
+i:hover {
+  transform: scale(1.05);
+}
+
 /* Generique */
 .section {
   background: var(--bg-black-900);
@@ -339,12 +352,33 @@ h3.my-profession {
   font-size: 20px;
   color: var(--text-black-700);
 }
+
+.sociaux {
+  display: inline;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+.sociaux a {
+  margin: 10px;
+}
+.fa-linkedin {
+  color: #0e76a8;
+}
+.fa-github {
+  color: #171515;
+}
+.fa-twitter {
+  color: #00acee;
+}
+
 .home .home-img {
   flex: 0 0 35%;
   max-width: 35%;
+  display: flex;
   text-align: center;
   position: relative;
 }
+
 .home-img::after {
   content: "";
   position: absolute;
@@ -352,8 +386,8 @@ h3.my-profession {
   width: 80px;
   border-bottom: 10px solid var(--skin-color);
   border-right: 10px solid var(--skin-color);
-  right: -30px;
-  bottom: 50px;
+  right: -25px;
+  bottom: 15px;
 }
 .home-img::before {
   content: "";
@@ -363,7 +397,7 @@ h3.my-profession {
   border-top: 10px solid var(--skin-color);
   border-left: 10px solid var(--skin-color);
   left: -20px;
-  top: -40px;
+  top: 15px;
 }
 .home .home-img img {
   height: 400px;
