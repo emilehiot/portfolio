@@ -1,432 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Découvrez mon portfolio. Explorez mes projets, mon parcours et n'hésitez pas à me contacter pour discuter de futurs projets."
-    />
-    <meta
-      name="keywords"
-      content="Portfolio, Développeur Web, Projets Web, Emile Hiot"
-    />
-    <meta name="author" content="Emile Hiot" />
 
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.png"
-      type="image/x-icon"
-    />
-    <!-- CDN -->
-    <script src="https://kit.fontawesome.com/2b1ffec109.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Emile - Portfolio</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Découvrez mon portfolio. Explorez mes projets, mon parcours et n'hésitez pas à me contacter pour discuter de futurs projets." />
+  <meta name="keywords" content="Portfolio, Développeur Web, Projets Web, Emile Hiot" />
+  <meta name="author" content="Emile Hiot" />
 
-  <body>
-    <div class="main-container">
-      <!-- NAVBAR -->
-      <div class="aside">
-        <div class="logo">
-          <a href="#">
-            <span>EH</span>
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+  <!-- CDN -->
+  <script src="https://kit.fontawesome.com/2b1ffec109.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Emile - Portfolio</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- NAVBAR -->
+    <div class="aside">
+      <div class="logo">
+        <a href="#">
+          <span>EH</span>
+        </a>
+      </div>
+
+      <!-- menu burgur -->
+      <div class="nav-toggler" id="nav-toggler">
+        <span></span>
+      </div>
+      <!-- TODO -->
+
+      <!-- Rubrique -->
+      <ul class="nav">
+        <li>
+          <a href="#home" class="nav-link active">
+            <i class="fa-solid fa-house"></i>
+            Accueil
           </a>
-        </div>
-
-        <!-- menu burgur -->
-        <div class="nav-toggler" id="nav-toggler">
-          <span></span>
-        </div>
-        <!-- TODO -->
-
-        <!-- Rubrique -->
-        <ul class="nav">
-          <li>
-            <a href="#home" class="nav-link active">
-              <i class="fa-solid fa-house"></i>
-              Accueil
-            </a>
-          </li>
-          <li>
-            <a href="#about" class="nav-link">
-              <i class="fa-solid fa-user"></i>
-              À propos
-            </a>
-          </li>
-          <li>
-            <a href="#education" class="nav-link">
-              <i class="fa-solid fa-school"></i>
-              Éducation
-            </a>
-          </li>
-          <li>
-            <a href="#experience" class="nav-link">
-              <i class="fa-solid fa-briefcase"></i>
-              Expérience
-            </a>
-          </li>
-          <li>
-            <a href="#contact" class="nav-link">
-              <i class="fa-solid fa-comments"></i>
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Page Principale -->
-      <div class="content">
-        <!-- ACCUEIL -->
-        <section class="home section active" id="home">
-          <div class="container">
-            <div class="row">
-              <div class="home-info padd-15">
-                <h3 class="hello">
-                  Bonjour, je m'appelle
-                  <span class="name">Emile</span>
-                </h3>
-
-                <h3 class="my-profession">
-                  Je suis
-                  <!-- typed.js -->
-                  <span class="typing" id="element"></span>
-                  <span class="typed-cursor" aria-hidden="true">|</span>
-                </h3>
-                <p>
-                  Bienvenue sur mon <strong>portfolio</strong> ! Naviguez à
-                  travers les différentes rubriques via le menu pour découvrir
-                  mon parcours, mes projets et bien plus encore. N'hésitez pas à
-                  <strong>télécharger mon CV</strong> ou à me laisser un message
-                  dans la section <strong>contact</strong> si vous souhaitez
-                  discuter de développement, d'un projet ou de tout autre sujet.
-                  Retrouvez-moi également sur mes différents
-                  <strong>réseaux sociaux</strong>.
-                </p>
-
-                <a
-                  href="assets/download/CV_EMILE_HIOT_2023.pdf"
-                  class="btn"
-                  download="CV_EMILE_HIOT_2023.pdf"
-                  >Télécharger CV</a
-                >
-
-                <div class="sociaux">
-                  <a href="https://github.com/emilehiot" target="_blank">
-                    <i class="fa-brands fa-github fa-2xl"></i>
-                  </a>
-
-                  <a
-                    href="https://www.linkedin.com/in/emilehiot/"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-linkedin fa-2xl"></i>
-                  </a>
-
-                  <a href="https://twitter.com/emilehiot" target="_blank">
-                    <i class="fa-brands fa-twitter fa-2xl"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="home-img padd-15">
-                <img
-                  src="assets/img/homepage.jpeg"
-                  alt="Photo me representant de face, sous forme humaine"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section class="about section" id="about">
-          <div class="container">
-            <!-- A propos -->
-            <div class="about-section">
-              <header>
-                <h2>À propos</h2>
-              </header>
-              <article class="about-content">
-                <p>
-                  Ma reconversion dans le monde du développement web a commencé
-                  lors d'une période de remise en question professionnelle. La
-                  routine de mon ancien emploi ne me satisfaisait plus et je
-                  cherchais un domaine où je pouvais constamment apprendre et
-                  évoluer. La programmation est rapidement devenue une évidence
-                  grâce à sa capacité à résoudre des problèmes concrets et à
-                  créer des choses à partir de rien.
-                </p>
-                <p>
-                  L'excitation de résoudre un problème complexe ou de voir un
-                  projet terminé est ce qui me motive à continuer d'apprendre et
-                  de m'améliorer chaque jour.
-                </p>
-                <p>
-                  Bien que je sois au début de mon parcours, mon engagement à
-                  comprendre et à maîtriser chaque aspect du développement est
-                  sans faille. Rejoindre une école numérique a été un pas de
-                  géant vers la réalisation de mes ambitions dans ce domaine.
-                </p>
-              </article>
-            </div>
-
-            <!-- Info perso -->
-            <div class="personal-info-section">
-              <header>
-                <h2>Information personnelle</h2>
-              </header>
-              <aside class="personal-info">
-                <div class="personal-info-col">
-                  <p>Date de naissance : <span>05 Avril 1996</span></p>
-                  <p>Age : <span>27 ans</span></p>
-                  <p>Localisation : <span>Carcassonne (11 - Aude)</span></p>
-                </div>
-                <div class="personal-info-col">
-                  <p>Téléphone : <span>07.68.99.47.61</span></p>
-                  <p>Email : <span>emile.hiot@proton.me</span></p>
-                  <p>Site web : <span>Prochainement</span></p>
-                </div>
-              </aside>
-            </div>
-
-            <!-- Skills -->
-            <div class="skills-section">
-              <header>
-                <h2>Compétences</h2>
-              </header>
-
-              <div class="skills">
-                <!-- Front-end -->
-                <div class="skill-category">
-                  <div class="skill-header">
-                    <h3>Front</h3>
-                  </div>
-                  <div class="skill-item">
-                    <iconify-icon
-                      icon="vscode-icons:file-type-html"
-                      width="32"
-                      height="32"
-                    ></iconify-icon>
-                    <p>HTML</p>
-                  </div>
-                  <div class="skill-item">
-                    <iconify-icon
-                      icon="vscode-icons:file-type-css"
-                      width="32"
-                      height="32"
-                    ></iconify-icon>
-                    <p>CSS</p>
-                  </div>
-                  <div class="skill-item">
-                    <iconify-icon
-                      icon="logos:javascript"
-                      width="32"
-                      height="32"
-                    ></iconify-icon>
-                    <p>JavaScript</p>
-                  </div>
-                </div>
-
-                <!-- Back-end -->
-                <div class="skill-category">
-                  <div class="skill-header">
-                    <h3>Back</h3>
-                  </div>
-                  <div class="skill-item">
-                    <iconify-icon
-                      icon="vscode-icons:file-type-php"
-                      width="32"
-                      height="32"
-                    ></iconify-icon>
-                    <p>PHP</p>
-                  </div>
-                  <div class="skill-item">
-                    <iconify-icon
-                      icon="logos:mysql"
-                      width="32"
-                      height="32"
-                    ></iconify-icon>
-                    <p>MySQL</p>
-                  </div>
-                </div>
-
-                <!-- Outils -->
-                <div class="skill-category">
-                  <div class="skill-header">
-                    <h3>Outils</h3>
-                  </div>
-                  <div class="skill-item">
-                    <iconify-icon
-                      icon="devicon:vim"
-                      width="32"
-                      height="32"
-                    ></iconify-icon>
-                    <p>Vim</p>
-                  </div>
-                  <div class="skill-item">
-                    <iconify-icon
-                      icon="skill-icons:figma-light"
-                      width="32"
-                      height="32"
-                    ></iconify-icon>
-                    <p>Figma</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="boutton-section">
-              <div class="buttons padd-15">
-                <a href="#contact" data-section-index="1" class="btn hire-me"
-                  >Contactez-moi</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- EDUCATION -->
-        <section class="education section" id="education">
-          <div class="container">
-            <header>
-              <h2>Éducation</h2>
-            </header>
-            <div class="timeline">
-              <div class="timeline-item">
-                <span class="timeline-date">2023</span>
-                <div class="timeline-item-content">
-                  <h4>
-                    <a
-                      href="https://3wacademy.fr/3w-academy-pro/formation-en-alternance/formation-integrateur-developpeur-web"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >3W ACADEMY - Intégrateur Web</a
-                    >
-                  </h4>
-                  <p>
-                    J'ai pu explorer en profondeur les facettes du front-end
-                    (HTML, CSS, JavaScript) et du back-end (PHP). Les défis
-                    étaient au rendez-vous, ce qui a renforcé ma détermination à
-                    avancer dans cette voie.
-                  </p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <span class="timeline-date">2023</span>
-                <div class="timeline-item-content">
-                  <h4>
-                    <a
-                      href="https://www.theodinproject.com/about"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >The Odin Project - Formation en Ligne Open Source</a
-                    >
-                  </h4>
-                  <p>
-                    The Odin Project m'a permis d'explorer les fondamentaux du
-                    développement web front-end, avec le soutien de développeurs
-                    expérimentés. La méthodologie pratique et l'interaction avec
-                    une communauté active via Discord ont rendu cet
-                    apprentissage stimulant, encouragant une poursuite autonome
-                    de la formation.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- EXPERIENCE -->
-        <section class="experience section" id="experience">
-          <div class="container">
-            <header>
-              <h2>Expérience</h2>
-            </header>
-
-            <div class="card-container">
-              <div class="card shadow-dark">
-                <div class="image-container">
-                  <img
-                    src="assets/img/review_portfolio.png"
-                    alt="Aperçu du projet Portfolio"
-                  />
-                </div>
-                <div class="card-content">
-                  <h3>Portfolio Personnel</h3>
-                  <p>
-                    Mon projet portfolio a été conçu comme un challenge
-                    personnel au début de mon parcours en développement web.
-                    C'était l'occasion de montrer ce que je pouvais faire avec
-                    les bases : HTML, CSS, et JavaScript. J'ai voulu créer
-                    quelque chose de simple mais efficace.
-                  </p>
-                  <div class="links">
-                    <a href="https://emilehiot.com/" target="_blank"
-                      >Voir le site</a
-                    >
-                    <a
-                      href="https://github.com/emilehiot/portfolio"
-                      target="_blank"
-                    >
-                      <iconify-icon
-                        class="github"
-                        icon="mdi:github"
-                        width="32"
-                        height="32"
-                      ></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- Répétez la structure .card -->
-            </div>
-          </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section class="contact section" id="contact">
-          <div class="container contact-container">
-            <header>
-              <h2>Contact</h2>
-            </header>
-            <form name="contact" netlify>
-              <label for="name">Nom :</label><br />
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Votre nom"
-              /><br />
-              <label for="email">Email :</label><br />
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="exemple@domaine.com"
-              /><br />
-              <label for="message">Message :</label><br />
-              <textarea
-                id="message"
-                name="message"
-                rows="10"
-                cols="30"
-                placeholder="Votre message ..."
-              ></textarea
-              ><br />
-              <input type="submit" value="Envoyer" class="btn" />
-            </form>
-          </div>
-        </section>
-      </div>
+        </li>
+        <li>
+          <a href="#about" class="nav-link">
+            <i class="fa-solid fa-user"></i>
+            À propos
+          </a>
+        </li>
+        <li>
+          <a href="#education" class="nav-link">
+            <i class="fa-solid fa-school"></i>
+            Éducation
+          </a>
+        </li>
+        <li>
+          <a href="#experience" class="nav-link">
+            <i class="fa-solid fa-briefcase"></i>
+            Expérience
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link">
+            <i class="fa-solid fa-comments"></i>
+            Contact
+          </a>
+        </li>
+      </ul>
     </div>
 
-    <!-- script js -->
-    <script src="js/main.js"></script>
-    <script src="js/typed.js"></script>
-  </body>
+    <!-- Page Principale -->
+    <div class="content">
+      <!-- ACCUEIL -->
+      <section class="home section active" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">
+                Bonjour, je m'appelle
+                <span class="name">Emile</span>
+              </h3>
+
+              <h3 class="my-profession">
+                Je suis
+                <!-- typed.js -->
+                <span class="typing" id="element"></span>
+                <span class="typed-cursor" aria-hidden="true">|</span>
+              </h3>
+              <p>
+                Bienvenue sur mon <strong>portfolio</strong> ! Naviguez à
+                travers les différentes rubriques via le menu pour découvrir
+                mon parcours, mes projets et bien plus encore. N'hésitez pas à
+                <strong>télécharger mon CV</strong> ou à me laisser un message
+                dans la section <strong>contact</strong> si vous souhaitez
+                discuter de développement, d'un projet ou de tout autre sujet.
+                Retrouvez-moi également sur mes différents
+                <strong>réseaux sociaux</strong>.
+              </p>
+
+              <a href="assets/download/CV_EMILE_HIOT_2023.pdf" class="btn" download="CV_EMILE_HIOT_2023.pdf">Télécharger
+                CV</a>
+
+              <div class="sociaux">
+                <a href="https://github.com/emilehiot" target="_blank">
+                  <i class="fa-brands fa-github fa-2xl"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/emilehiot/" target="_blank">
+                  <i class="fa-brands fa-linkedin fa-2xl"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="home-img padd-15">
+              <img src="assets/img/homepage.jpeg" alt="Photo me representant de face, sous forme humaine" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about section" id="about">
+        <div class="container">
+          <!-- A propos -->
+          <div class="about-section">
+            <header>
+              <h2>À propos</h2>
+            </header>
+            <article class="about-content">
+              <p>
+                Ma reconversion dans le monde du développement web a commencé
+                lors d'une période de remise en question professionnelle. La
+                routine de mon ancien emploi ne me satisfaisait plus et je
+                cherchais un domaine où je pouvais constamment apprendre et
+                évoluer. La programmation est rapidement devenue une évidence
+                grâce à sa capacité à résoudre des problèmes concrets et à
+                créer des choses à partir de rien.
+              </p>
+              <p>
+                L'excitation de résoudre un problème complexe ou de voir un
+                projet terminé est ce qui me motive à continuer d'apprendre et
+                de m'améliorer chaque jour.
+              </p>
+              <p>
+                Bien que je sois au début de mon parcours, mon engagement à
+                comprendre et à maîtriser chaque aspect du développement est
+                sans faille. Rejoindre une école numérique a été un pas de
+                géant vers la réalisation de mes ambitions dans ce domaine.
+              </p>
+            </article>
+          </div>
+
+          <!-- Info perso -->
+          <div class="personal-info-section">
+            <header>
+              <h2>Information personnelle</h2>
+            </header>
+            <aside class="personal-info">
+              <div class="personal-info-col">
+                <p>Date de naissance : <span>05 Avril 1996</span></p>
+                <p>Age : <span>27 ans</span></p>
+                <p>Localisation : <span>Carcassonne (11 - Aude)</span></p>
+              </div>
+              <div class="personal-info-col">
+                <p>Téléphone : <span>07.68.99.47.61</span></p>
+                <p>Email : <span>emile.hiot@proton.me</span></p>
+                <p>Site web : <span>Prochainement</span></p>
+              </div>
+            </aside>
+          </div>
+
+          <!-- Skills -->
+          <div class="skills-section">
+            <header>
+              <h2>Compétences</h2>
+            </header>
+
+            <div class="skills">
+              <!-- Front-end -->
+              <div class="skill-category">
+                <div class="skill-header">
+                  <h3>Front</h3>
+                </div>
+                <div class="skill-item">
+                  <iconify-icon icon="vscode-icons:file-type-html" width="32" height="32"></iconify-icon>
+                  <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                  <iconify-icon icon="vscode-icons:file-type-css" width="32" height="32"></iconify-icon>
+                  <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                  <iconify-icon icon="logos:javascript" width="32" height="32"></iconify-icon>
+                  <p>JavaScript</p>
+                </div>
+              </div>
+
+              <!-- Back-end -->
+              <div class="skill-category">
+                <div class="skill-header">
+                  <h3>Back</h3>
+                </div>
+                <div class="skill-item">
+                  <iconify-icon icon="vscode-icons:file-type-php" width="32" height="32"></iconify-icon>
+                  <p>PHP</p>
+                </div>
+                <div class="skill-item">
+                  <iconify-icon icon="logos:mysql" width="32" height="32"></iconify-icon>
+                  <p>MySQL</p>
+                </div>
+              </div>
+
+              <!-- Outils -->
+              <div class="skill-category">
+                <div class="skill-header">
+                  <h3>Outils</h3>
+                </div>
+                <div class="skill-item">
+                  <iconify-icon icon="devicon:vim" width="32" height="32"></iconify-icon>
+                  <p>Vim</p>
+                </div>
+                <div class="skill-item">
+                  <iconify-icon icon="skill-icons:figma-light" width="32" height="32"></iconify-icon>
+                  <p>Figma</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="boutton-section">
+            <div class="buttons padd-15">
+              <a href="#contact" data-section-index="1" class="btn hire-me">Contactez-moi</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="education section" id="education">
+        <div class="container">
+          <header>
+            <h2>Éducation</h2>
+          </header>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-date">2023</span>
+              <div class="timeline-item-content">
+                <h4>
+                  <a href="https://3wacademy.fr/3w-academy-pro/formation-en-alternance/formation-integrateur-developpeur-web"
+                    target="_blank" rel="noopener noreferrer">3W ACADEMY - Intégrateur Web</a>
+                </h4>
+                <p>
+                  J'ai pu explorer en profondeur les facettes du front-end
+                  (HTML, CSS, JavaScript) et du back-end (PHP). Les défis
+                  étaient au rendez-vous, ce qui a renforcé ma détermination à
+                  avancer dans cette voie.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-date">2023</span>
+              <div class="timeline-item-content">
+                <h4>
+                  <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">The Odin
+                    Project - Formation en Ligne Open Source</a>
+                </h4>
+                <p>
+                  The Odin Project m'a permis d'explorer les fondamentaux du
+                  développement web front-end, avec le soutien de développeurs
+                  expérimentés. La méthodologie pratique et l'interaction avec
+                  une communauté active via Discord ont rendu cet
+                  apprentissage stimulant, encouragant une poursuite autonome
+                  de la formation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="experience section" id="experience">
+        <div class="container">
+          <header>
+            <h2>Expérience</h2>
+          </header>
+
+          <div class="card-container">
+            <div class="card shadow-dark">
+              <div class="image-container">
+                <img src="assets/img/review_portfolio.png" alt="Aperçu du projet Portfolio" />
+              </div>
+              <div class="card-content">
+                <h3>Portfolio Personnel</h3>
+                <p>
+                  Mon projet portfolio a été conçu comme un challenge
+                  personnel au début de mon parcours en développement web.
+                  C'était l'occasion de montrer ce que je pouvais faire avec
+                  les bases : HTML, CSS, et JavaScript. J'ai voulu créer
+                  quelque chose de simple mais efficace.
+                </p>
+                <div class="links">
+                  <a href="https://emilehiot.com/" target="_blank">Voir le site</a>
+                  <a href="https://github.com/emilehiot/portfolio" target="_blank">
+                    <iconify-icon class="github" icon="mdi:github" width="32" height="32"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Répétez la structure .card -->
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact section" id="contact">
+        <div class="container contact-container">
+          <header>
+            <h2>Contact</h2>
+          </header>
+          <form name="contact" netlify>
+            <label for="name">Nom :</label><br />
+            <input type="text" id="name" name="name" placeholder="Votre nom" /><br />
+            <label for="email">Email :</label><br />
+            <input type="email" id="email" name="email" placeholder="exemple@domaine.com" /><br />
+            <label for="message">Message :</label><br />
+            <textarea id="message" name="message" rows="10" cols="30" placeholder="Votre message ..."></textarea><br />
+            <input type="submit" value="Envoyer" class="btn" />
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- script js -->
+  <script src="js/main.js"></script>
+  <script src="js/typed.js"></script>
+</body>
+
 </html>
